@@ -1,13 +1,13 @@
 {
-  "id": "worldbuilding",
+  "id": "witchersystem",
   "version": "0.8.2",
-  "title": "Simple World-Building",
+  "title": "The Witcher TRPG",
   "url": "https://github.com/foundryvtt/worldbuilding/",
-  "description": "A minimalist game system which provides configurable Actor and Item templates to support free-form system agnostic game-play.",
+  "description": "A rudimentary implementation of the 'The Witcher TRPG' for Foundry VTT, based entirely on the Simple Worldbuilding System for Foundry designed by Atropos.",
   "license": "LICENSE.txt",
   "authors": [
     {
-      "name": "Atropos",
+      "name": "Denzel",
       "url": "https://foundryvtt.com"
     }
   ],
@@ -34,6 +34,6 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "manifest": "https://raw.githubusercontent.com/foundryvtt/worldbuilding/master/system.json",
+  "manifest": "https://raw.githubusercontent.com/foundryvtt/witchersystem/main/system.json",
   "download": "https://github.com/foundryvtt/worldbuilding/archive/refs/tags/release-082.zip"
 }
