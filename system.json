@@ -1,6 +1,6 @@
 {
   "id": "witcher",
-  "version": "0.8.2",
+  "version": "0.0.1",
   "title": "The Witcher TRPG",
   "url": "https://github.com/foundryvtt/worldbuilding/",
   "description": "A rudimentary implementation of the 'The Witcher TRPG' for Foundry VTT, based entirely on the Simple Worldbuilding System for Foundry designed by Atropos.",

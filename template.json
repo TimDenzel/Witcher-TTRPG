@@ -1,32 +1,514 @@
 {
-"Actor": {
-  "types": ["character"],
-  "htmlFields": ["biography"],
-  "character": {
-    "biography": "",
-    "health": {
-      "value": 10,
-      "min": 0,
-      "max": 10
-    },
-    "power": {
-      "value": 5,
-      "min": 0,
-      "max": 5
-    },
-    "attributes": {},
-    "groups": {}
+  "Actor": {
+    "types": [
+      "character",
+      "npc",
+      "monster"
+    ],
+    "htmlFields": [
+      "biography"
+    ],
+    "character": {
+      "biography": {
+        "name": "",
+        "race": "",
+        "gender": "",
+        "age": "",
+        "improvementPoints": "",
+        "reputation": ""
+      },
+      "profession": {
+        "name": "",
+        "definingSkill": "",
+        "professionSkills": {
+          "blue1": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "description": ""
+          },
+          "blue2": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "description": ""
+          },
+          "blue3": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "description": ""
+          },
+          "green1": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "description": ""
+          },
+          "green2": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "description": ""
+          },
+          "green3": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "description": ""
+          },
+          "red1": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "description": ""
+          },
+          "red2": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "description": ""
+          },
+          "red3": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "description": ""
+          }
+        }
+      },
+      "attributes": {
+        "statistics": {
+          "int": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "ref": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "dex": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "body": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "spd": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "emp": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "cra": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "will": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "luck": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          }
+        },
+        "derived": {
+          "stun": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "run": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "leap": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "hp": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "sta": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "enc": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "rec": {
+            "value": 0,
+            "min": 0,
+            "max": 100
+          },
+          "punch": "",
+          "kick": ""
+        }
+      },
+      "skills": {
+        "intSkills": {
+          "awareness": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "business": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "deduction": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "education": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "commonSpeech": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "elderSpeech": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "dwarven": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "monsterLore": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "socialEtiquette": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "streetwise": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "tactics": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "teaching": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "wildernessSurvival": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          }
+        },
+        "refSkills": {
+          "brawling": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "dodgeEscape": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "melee": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "riding": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "sailing": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "smallBlades": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "staffSpear": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "swordsmanship": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          }
+        },
+        "dexSkills": {
+          "archery": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "athletics": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "crossbow": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "sleightOfHand": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "stealth": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          }
+        },
+        "bodySkills": {
+          "physique": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "endurance": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          }
+        },
+        "empSkills": {
+          "charisma": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "deceit": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "fineArts": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "gambling": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "groomingAndStyle": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "humanPerception": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "leadership": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "persuasion": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "performance": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "seduction": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          }
+        },
+        "craSkills": {
+          "alchemy": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "crafting": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "disguise": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "firstAid": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "forgery": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "pickLock": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "trapCrafting": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          }
+        },
+        "willSkills": {
+          "courage": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "hexWeaving": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "intimidation": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "spellCasting": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "resistMagic": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "resistCoercion": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          },
+          "ritualCrafting": {
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "bonus": 0
+          }
+        }
+      },
+      "groups": {}
+    }
+  },
+  "Item": {
+    "types": [
+      "item"
+    ],
+    "htmlFields": [
+      "description"
+    ],
+    "item": {
+      "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {},
+      "groups": {}
+    }
   }
-},
-"Item": {
-  "types": ["item"],
-  "htmlFields": ["description"],
-  "item": {
-    "description": "",
-    "quantity": 1,
-    "weight": 0,
-    "attributes": {},
-    "groups": {}
-  }
-}
 }
